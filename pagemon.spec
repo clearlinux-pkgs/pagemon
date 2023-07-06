@@ -5,7 +5,7 @@
 #
 Name     : pagemon
 Version  : 0.02.01
-Release  : 2
+Release  : 3
 URL      : https://github.com/ColinIanKing/pagemon/archive/refs/tags/V0.02.01.tar.gz
 Source0  : https://github.com/ColinIanKing/pagemon/archive/refs/tags/V0.02.01.tar.gz
 Summary  : No detailed summary available

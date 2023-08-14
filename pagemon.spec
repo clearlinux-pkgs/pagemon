@@ -4,10 +4,10 @@
 # Using build pattern: make
 #
 Name     : pagemon
-Version  : 0.02.01
-Release  : 4
-URL      : https://github.com/ColinIanKing/pagemon/archive/refs/tags/V0.02.01.tar.gz
-Source0  : https://github.com/ColinIanKing/pagemon/archive/refs/tags/V0.02.01.tar.gz
+Version  : 0.02.02
+Release  : 5
+URL      : https://github.com/ColinIanKing/pagemon/archive/refs/tags/V0.02.02.tar.gz
+Source0  : https://github.com/ColinIanKing/pagemon/archive/refs/tags/V0.02.02.tar.gz
 Summary  : No detailed summary available
 Group    : Development/Tools
 License  : GPL-2.0
@@ -60,15 +60,15 @@ man components for the pagemon package.
 
 
 %prep
-%setup -q -n pagemon-0.02.01
-cd %{_builddir}/pagemon-0.02.01
+%setup -q -n pagemon-0.02.02
+cd %{_builddir}/pagemon-0.02.02
 
 %build
 export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1689809114
+export SOURCE_DATE_EPOCH=1692004098
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
 export RANLIB=gcc-ranlib
@@ -81,7 +81,7 @@ make  %{?_smp_mflags}
 
 
 %install
-export SOURCE_DATE_EPOCH=1689809114
+export SOURCE_DATE_EPOCH=1692004098
 rm -rf %{buildroot}
 mkdir -p %{buildroot}/usr/share/package-licenses/pagemon
 cp %{_builddir}/pagemon-%{version}/COPYING %{buildroot}/usr/share/package-licenses/pagemon/4cc77b90af91e615a64ae04893fdffa7939db84c || :
